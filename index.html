@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/gov_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12a71ec4df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a title="MyGovNL and Online Services" href="https://www.gov.nl.ca/onlineservices"><span>My</span>GovNL and Online Services</a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="layout-banner-container">
+            <div class="layout-banner-container-first">
+                <img src="./img/government-brand-22.02.svg" alt="">
+                <h1>Health and Commmunity Services</h1>
+            </div>
+            <div class="search-box">
+                <input type="search" placeholder="Search gov.nl.ca">
+                <button type="submit"><img src="./img/search-interface-symbol.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-image">
+            <img src="./img/GettyImages-892044520-cropped.jpg" alt="">
+        </div>
+        
+        <div class="layout-top-navigation">
+            <div class="layout-top-menu">
+                <nav class="top-navigation">
+                    <ul>
+                        <li class="menu-item-1">General Public ⏷</li>
+                        <li class="menu-item-2"> Seniors ⏷</li>
+                        <li class="menu-item-3">New Residents ⏷</li>
+                        <li class="menu-item-4">Health Professionals ⏷</li>
+                        <li class="menu-item-5">Francais ⏷</li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="layout-body">
+            <div class="layout-left-navigation">
+                <nav class="left-navigation">
+                    <ul class="left-menu">
+                        <li class="menu-item">Home</li>
+                        <li class="menu-item-mcp">Medical Care Plan (MCP)</li>
+                        <li class="menu-item">Acure Health Services and Nursing Policy</li>
+                        <li class="menu-item">Adult Protection Act</li>
+                        <li class="menu-item">Bursaries and Incentives for Health Care Professionals</li>
+                        <li class="menu-item">Chronic Disease</li>
+                        <li class="menu-item">Contact Information for Regional Health Authorities</li>
+                        <li class="menu-item">Covid-19</li>
+                        <li class="menu-item">Dental Services</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="layout-main-content">
+                <div class="breadcrumbs">
+                    <span>Health and Community Services > Medical Care Plan (MCP)</span>
+                    <!-- <span>Medical Care Plan (MCP)</span> -->
+                </div>
+                <header class="entry-header">
+                    <h1 class="entry-title">Medical Care Plan (MCP)</h1>
+                </header>
+                <div class="entry-content">
+                    <p class="lang-franc">Francais</p>
+                    <h2>Information for MCP Applicants and Beneficiaries</h2>
+                    <h3>INTRODUCTION</h3>
+                    <p>The Newfoundland and Labrador Medical Care Plan (MCP) is a publicly administered comprehensive plan of public medical care insurance which was introduced on April 1, 1969.  MCP covers the costs of insured physician services for residents of the province who have met eligibility criteria to register as MCP beneficiaries. MCP beneficiaries are also entitled to coverage of insured medical services received in a hospital under the Hospital Insurance Plan (HIP).</p>
+                    <br>
+                    <p>MCP and HIP operate in accordance with the Medical Care and Hospital Insurance Act and related legislation and regulations and in compliance with the Canada Health Act.</p>
+                    <br>
+                    <p>Beneficiaries must present a valid MCP card when receiving insured services. Make sure to take your card with you when visiting a doctor, hospital, clinic or medical facility. Failure to do so may mean you could be directly billed by the medical provider or possibly denied service.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="chatbot-project-453616"
+      agent-id="9c755a3e-467b-4bc4-b42f-a1e0dc0604a8"
+      language-code="en"
+      storage-option="none"
+      chat-title-icon="https://img.freepik.com/premium-vector/chat-logo-with-robot-face_1124-277.jpg"
+      chat-icon="https://img.freepik.com/premium-vector/chat-logo-with-robot-face_1124-277.jpg"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="Healthcare MedBot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        --df-messenger-titlebar-background: #1b9221;
+        --df-messenger-titlebar-font-color: white;
+        
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+</body>
+</html>
